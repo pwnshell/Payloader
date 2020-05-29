@@ -10,11 +10,11 @@ def banner():
     ban = pyfiglet.figlet_format('        PAYLOADER')
     print(termcolor.colored(ban, 'red', attrs=['bold']))
     print(termcolor.colored('               Written by: pwnshell', 'red', attrs=['bold']))
-    print(termcolor.colored('               Github Link: https://github.com/pwnshell/Tools', 'red', attrs=['bold']))
+    print(termcolor.colored('               Github Link: https://github.com/pwnshell/Payloader', 'red', attrs=['bold']))
  #   print(termcolor.colored('==============================================================', 'red'))
 
 def list_os():
-    print(termcolor.colored('\n[+] Select OS from menu', 'red', attrs=['bold']))
+    print(termcolor.colored('\n[+] Select your Payload type:', 'red', attrs=['bold']))
     print(termcolor.colored('\n[+] 1. Reverse shell binary payload for Windows', 'green', attrs=['bold']))
     print(termcolor.colored('[+] 2. Reverse shell binary payload for Linux', 'green', attrs=['bold']))
     print(termcolor.colored('[+] 3. Web Payloads(php,java,asp)', 'green', attrs=['bold']))
@@ -29,7 +29,7 @@ def selection():
     while select  != "6":
         try:
             list_os()
-            select = input(termcolor.colored('\nEnter your OS choice: ', 'red', attrs=['bold']))
+            select = input(termcolor.colored('\nEnter your selection: ', 'red', attrs=['bold']))
             if select == "1":
                 while select_1 != 4:
                     print(termcolor.colored('\nPayloads Available:', 'red', attrs=['bold']))
